@@ -40,3 +40,36 @@ const siteContent = {
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
+
+const headerNav = document.querySelector('header nav');
+console.log(headerNav);
+const links = headerNav.children;
+console.log(links);
+
+links[0].textContent = siteContent.nav["nav-item-1"];
+links[1].textContent = siteContent.nav["nav-item-2"];
+links[2].textContent = siteContent.nav["nav-item-3"];
+links[3].textContent = siteContent.nav["nav-item-4"];
+links[4].textContent = siteContent.nav["nav-item-5"];
+links[5].textContent = siteContent.nav["nav-item-6"];
+
+const ctaImg = document.querySelector('#cta-img');
+ctaImg.src = siteContent.cta['img-src'];
+
+const ctaH1 = document.querySelector('.cta-text h1');
+const brk = document.createElement('br');
+ctaH1.textContent = `Dom ${brk} is ${brk} Awesome`;
+
+const btn = document.querySelector('.cta-text button');
+btn.textContent = siteContent.cta.button;
+
+// const topContent = document.querySelector('.top-content');
+
+const featuresH4 = document.querySelector('.text-content h4');
+featuresH4.textContent = siteContent['main-content']['features-h4'];
+
+const aboutH4 = featuresH4.nextElementSibling;
+featuresH4.textContent = siteContent['main-content']['about-h4'];
+
+// const servicesH4 = document.querySelector('.text-content h4');
+// featuresH4.textContent = siteContent['main-content']['features-h4'];
