@@ -52,7 +52,7 @@ links[3].textContent = siteContent.nav["nav-item-4"];
 links[4].textContent = siteContent.nav["nav-item-5"];
 links[5].textContent = siteContent.nav["nav-item-6"];
 
-const ctaImg = document.querySelector('#cta-img');
+const ctaImg = document.getElementById('cta-img');
 ctaImg.src = siteContent.cta['img-src'];
 
 const ctaH1 = document.querySelector('.cta-text h1');
@@ -74,63 +74,53 @@ featuresH4.textContent = siteContent['main-content']['features-h4'];
 const featuresP = featuresH4.nextElementSibling;
 featuresP.textContent = siteContent['main-content']['features-content'];
 
+// About
 const about = features.nextElementSibling;
-
 const aboutH4 = about.firstElementChild;
 aboutH4.textContent = siteContent['main-content']['about-h4'];
-
 const aboutP = aboutH4.nextElementSibling;
 aboutP.textContent = siteContent['main-content']['about-content'];
 
-
-const middleImg = document.querySelector('.middle-img');
+// Middle image
+const middleImg = document.getElementById('middle-img');
 middleImg.src = siteContent['main-content']['middle-img-src'];
 
 
 const bottomContent = mainContent.lastElementChild;
 
-
+// Services
 const services = bottomContent.firstElementChild;
-
 const servicesH4 = services.firstElementChild;
 servicesH4.textContent = siteContent['main-content']['services-h4'];
-
 const servicesP = services.lastElementChild;
 servicesP.textContent = siteContent['main-content']['services-content'];
 
-
+// Product
 const product = services.nextElementSibling;
-
 const productH4 = product.firstElementChild;
 productH4.textContent = siteContent['main-content']['product-h4'];
-
 const productP = productH4.nextElementSibling;
 productP.textContent = siteContent['main-content']['product-content'];
 
-
+// Vision
 const vision = bottomContent.lastElementChild;
-
 const visionH4 = vision.firstElementChild;
 visionH4.textContent = siteContent['main-content']['vision-h4'];
-
 const visionP = visionH4.nextElementSibling;
 visionP.textContent = siteContent['main-content']['vision-content'];
 
 
 // contact
 const contact = document.querySelector('.contact');
-
 const contactH4 = contact.firstElementChild;
 contactH4.textContent = siteContent.contact['contact-h4'];
-
 const address = contactH4.nextElementSibling;
 address.textContent = siteContent.contact.address;
-
 const phone = address.nextElementSibling;
 phone.textContent = siteContent.contact.phone;
-
 const email = phone.nextElementSibling;
 email.textContent = siteContent.contact.email;
 
+// Footer
 const footerP = document.querySelector('footer p');
 footerP.textContent = siteContent.footer.copyright;
