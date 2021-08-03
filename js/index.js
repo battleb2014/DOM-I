@@ -56,8 +56,9 @@ const ctaImg = document.querySelector('#cta-img');
 ctaImg.src = siteContent.cta['img-src'];
 
 const ctaH1 = document.querySelector('.cta-text h1');
-const brk = document.createElement('br');
-ctaH1.textContent = `Dom ${brk} is ${brk} Awesome`;
+const newLine = '\n';
+ctaH1.style.whiteSpace = 'pre';
+ctaH1.textContent = `DOM ${newLine} IS ${newLine} AWESOME`;
 
 const btn = document.querySelector('.cta-text button');
 btn.textContent = siteContent.cta.button;
@@ -72,7 +73,6 @@ const featuresH4 = features.firstElementChild;
 featuresH4.textContent = siteContent['main-content']['features-h4'];
 const featuresP = featuresH4.nextElementSibling;
 featuresP.textContent = siteContent['main-content']['features-content'];
-
 
 const about = features.nextElementSibling;
 
